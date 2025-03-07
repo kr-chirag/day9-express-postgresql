@@ -1,3 +1,4 @@
+import "./config";
 import express from "express";
 import authRouter from "./routes/auth.routes";
 import usersRouter from "./routes/users.route";
