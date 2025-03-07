@@ -1,11 +1,15 @@
 import express from "express";
-import { Request, Response } from "express-serve-static-core";
+import authRouter from "./routes/auth.routes";
+import usersRouter from "./routes/users.route";
+import cookieParser from "cookie-parser";
 
 const app = express();
 
-app.get("/", (req: Request, res: Response) => {
-    res.send("working...");
-});
+app.use(express.json());
+app.use(cookieParser());
+
+app.use("/auth", authRouter);
+app.use("/users", usersRouter);
 
 app.listen(3000, (error?: Error) => {
     if (error) console.log(error);
