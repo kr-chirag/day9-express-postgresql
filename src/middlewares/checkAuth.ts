@@ -1,5 +1,3 @@
-/// <reference path="../types/express.d.ts" />
-
 import { NextFunction, Request, Response } from "express-serve-static-core";
 import jwt from "jsonwebtoken";
 import { getUserById } from "../services/userServices";

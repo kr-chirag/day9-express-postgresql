@@ -3,10 +3,10 @@ import { Pool, PoolClient } from "pg";
 let tableCreated = false;
 
 const pool = new Pool({
-    user: process.env.DATABASE_USER ?? "postgres",
+    user: process.env.DATABASE_USER ?? "username",
     host: process.env.DATABASE_HOST ?? "localhost",
-    database: process.env.DATABASE_NAME ?? "tmpdb",
-    password: process.env.DATABASE_PASSPORT ?? "123",
+    database: process.env.DATABASE_NAME ?? "dabname",
+    password: process.env.DATABASE_PASSWORD ?? "dbpass",
     port: parseInt(process.env.PORT ?? "5432"),
 });
 

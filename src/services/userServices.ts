@@ -1,4 +1,4 @@
-import { UserInterface } from "../types/user";
+// import { UserInterface } from "../types/user";
 import getDbClient from "../utils/database";
 import bcrypt from "bcrypt";
 
